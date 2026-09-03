@@ -24,7 +24,19 @@ To rigorously evaluate the models without data leakage, I designed an "Isolation
 
 ## 📊 Key Findings & Medical Insights
 
-![Model Explainability & Performance](Images/viz_3.png)
+### Model Performance Overview
+To rigorously evaluate the pipelines on severely imbalanced medical data, I tracked a comprehensive suite of metrics rather than relying solely on standard Accuracy.
+
+The table below illustrates the **"Accuracy Paradox."** Notice how all models achieve high baseline Accuracy and ROC-AUC, but struggle significantly when measured by Recall and Precision-Recall (PR) AUC—highlighting why these stricter metrics are the only honest way to evaluate minority-class patient safety:
+
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC (Standard) | PR-AUC (Honest Metric) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Logistic Regression** | **0.76** | **0.57** | **0.76** | **0.65** | **0.85** | **0.72** |
+| Random Forest | 0.76 | 0.57  0.78 | 0.66 | 0.84 | 0.70 |
+| XGBoost | 0.77 | 0.60 | 0.70 | 0.64 | 0.83 | 0.71 |
+| LightGBM | 0.78 | 0.61 | 0.70 | 0.65 | 0.83 | 0.71 |
+| MLP Neural Network | 0.76 | 0.58 | 0.70 | 0.64 | 0.84 | 0.69 |
+*(Note: Logistic Regression selected as the final model due to stability and best PR-AUC).*
 
 ### 1. The ROC Illusion: Exposing Honest Metrics
 When evaluating the 5 models, ROC curves showed an impressive AUC of >0.83 across the board. However, this is an illusion caused by the massive class imbalance. 
