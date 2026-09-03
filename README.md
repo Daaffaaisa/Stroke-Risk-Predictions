@@ -32,7 +32,7 @@ The table below illustrates the **"Accuracy Paradox."** Notice how all models ac
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC (Standard) | PR-AUC (Honest Metric) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Logistic Regression** | **0.76** | **0.57** | **0.76** | **0.65** | **0.85** | **0.72** |
-| Random Forest | 0.76 | 0.57  0.78 | 0.66 | 0.84 | 0.70 |
+| Random Forest | 0.76 | 0.57 | 0.78 | 0.66 | 0.84 | 0.70 |
 | XGBoost | 0.77 | 0.60 | 0.70 | 0.64 | 0.83 | 0.71 |
 | LightGBM | 0.78 | 0.61 | 0.70 | 0.65 | 0.83 | 0.71 |
 | MLP Neural Network | 0.76 | 0.58 | 0.70 | 0.64 | 0.84 | 0.69 |
