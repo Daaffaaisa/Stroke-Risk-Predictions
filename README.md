@@ -53,7 +53,7 @@ A standard ML threshold defaults to 0.50. However, to prioritize patient safety 
 ├── Images/                        # Visualizations (ROC vs PR, SHAP plots)
 ├── Referensi/                     # Medical references and documentation
 ├── Notebooks/
-    └── Stroke_Risk.ipynb   # Main Pipeline & SMOTE experimentation notebook   
+    └── Stroke_Risk.ipynb          # Main Pipeline & SMOTE experimentation notebook   
 ├── requirements.txt               # Dependencies
 └── README.md
 ```
