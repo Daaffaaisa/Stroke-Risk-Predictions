@@ -53,12 +53,12 @@ A standard ML threshold defaults to 0.50. However, to prioritize patient safety 
 ├── Images/                        # Visualizations (ROC vs PR, SHAP plots)
 ├── Referensi/                     # Medical references and documentation
 ├── Notebooks/
-    └── Ujikom_Sertifikasi.ipynb   # Main Pipeline & SMOTE experimentation notebook   
+    └── Stroke_Risk.ipynb   # Main Pipeline & SMOTE experimentation notebook   
 ├── requirements.txt               # Dependencies
 └── README.md
 ```
 
 ## 🚀 How to Run & Reproduce
-Clone this repository: `git clone https://github.com/Daaffaaisa/Stroke-Risk-Predictions.git`
-Install dependencies: `pip install -r requirements.txt`
-Run Ujikom_Sertifikasi.ipynb to execute the leakage-proof pipeline, SMOTE cross-validation, and SHAP explainability analysis.
+* Clone this repository: `git clone https://github.com/Daaffaaisa/Stroke-Risk-Predictions.git`
+* Install dependencies: `pip install -r requirements.txt`
+* Run Stroke_Risk.ipynb to execute the leakage-proof pipeline, SMOTE cross-validation, and SHAP explainability analysis.
