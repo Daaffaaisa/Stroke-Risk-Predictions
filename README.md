@@ -27,7 +27,7 @@ To rigorously evaluate the models without data leakage, I designed an "Isolation
 ### Model Performance Overview
 To rigorously evaluate the pipelines on severely imbalanced medical data, I tracked a comprehensive suite of metrics rather than relying solely on standard Accuracy.
 
-The table below illustrates the **"Accuracy Paradox."** Notice how all models achieve high baseline Accuracy and ROC-AUC, but struggle significantly when measured by Recall and Precision-Recall (PR) AUC—highlighting why these stricter metrics are the only honest way to evaluate minority-class patient safety:
+The table below illustrates the **"Accuracy Paradox."** Notice how all models achieve high baseline Accuracy and ROC-AUC, but struggle significantly when measured by Recall and Precision-Recall (PR) AUC highlighting why these stricter metrics are the only honest way to evaluate minority-class patient safety:
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC (Standard) | PR-AUC (Honest Metric) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
