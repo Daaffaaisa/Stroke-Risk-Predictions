@@ -29,10 +29,14 @@ To rigorously evaluate the models without data leakage, I designed an "Isolation
 ### 1. The ROC Illusion: Exposing Honest Metrics
 When evaluating the 5 models, ROC curves showed an impressive AUC of >0.83 across the board. However, this is an illusion caused by the massive class imbalance. 
 
+![ROC vs PR Curve Comparison](Images/viz_5.png) 
+
 By switching to **Precision-Recall (PR) Curves**, the honest performance dropped to a PR-AUC of ~0.72. The PR Curve reveals that detecting the minority stroke class is far harder than the ROC metric suggests. Logistic Regression ultimately proved the most stable for this specific thresholding task.
 
 ### 2. Multiplicative Risk Revealed via SHAP
 I applied **SHAP (Shapley Additive exPlanations)** based on game theory to open the model's "black box". The feature interaction analysis revealed a critical medical insight: Hypertension combined with Heart Disease does not just create an *additive* risk, it creates an *exponential (multiplicative)* risk. 
+
+![SHAP Feature Impact](Images/viz_6.png)
 
 ### 3. Dynamic Thresholding for Mass Screening
 A standard ML threshold defaults to 0.50. However, to prioritize patient safety (Recall), I calibrated a **Dynamic Threshold System**:
